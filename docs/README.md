@@ -70,6 +70,7 @@ ________________________________________________________________________________
 ## What were the troubles which caused inability to accomplish task in time
 1. Unable to initialize selenium webdriver instance for a long time due to restrictions in Administrator permissions on Amazon AWS EC2 Windows instance due to security reasons (error "Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed")
 2. Problems with text recognition on Captcha  - while recognition Unicode symbols appeared in decryption string eventually, even though it was explicitly forced to use "rus" library - probably because Russian recognition language package is not very enriched due to limited usage of pytesseract with Russian language
+3. No data (Name, Surname, Patronym) for real debtors were given after request - time taken to find any possible combination
 
 _________________________________________________________________________________________________________________________________________________________________
 # Documentation used:
