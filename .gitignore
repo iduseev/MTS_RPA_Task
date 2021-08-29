@@ -1,0 +1,5 @@
+__pycache__
+.idea
+!**/__init__.py
+Trash
+.DS_Store
