@@ -1,4 +1,4 @@
-# PyOpenRPA
+# Robotics Process Automation of searching records in FSSP service
 This repo contains Python-based robot working on Windows which utilizes selenium and pywin32 libraries for searching and extracting debt records from FSSP service and save results in a separate file.
 
 ## NOTE! Selenium web driver was removed from this repo intentionally because the robot was published for reference purposes only.
@@ -11,6 +11,7 @@ This is a robot which purpose is to take excel file, read it row by row for debt
 
 _________________________________________________________________________________________________________________________________________________________________
 # Robot structure
+```
 📦PROJECT
 ┣ 📦builds
 ┃ ┗ 📜settings.py
@@ -31,7 +32,7 @@ ________________________________________________________________________________
 ┃
 ┣ 📦tests
 ┃ ┗ 📜fssp_extractor_test.py
-
+```
 _________________________________________________________________________________________________________________________________________________________________
 
 ## For robot implementation, following technologies and libraries were used:
@@ -55,9 +56,9 @@ ________________________________________________________________________________
 
 
 _________________________________________________________________________________________________________________________________________________________________
-## What was done and what could be better:
+# What was done and what could be better:
 
-# What was done:
+## What was done:
 1. COM_API_Excel.py separate module was created utilizing pywin32 library
 2. init_webdriver() func made that correctly initializes selenium webdriver instance 
 3. Necessary web elements were obtained on web page using CSS selectors
@@ -66,12 +67,12 @@ ________________________________________________________________________________
 6. recognize_captcha() func is working and attempts to recognize russian text on a picture, returns string
 7. separate file settings.py was prepared to store all settings in one place
 
-# What were the troubles which caused inability to accomplish task in time
+## What were the troubles which caused inability to accomplish task in time
 1. Unable to initialize selenium webdriver instance for a long time due to restrictions in Administrator permissions on Amazon AWS EC2 Windows instance due to security reasons (error "Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed")
 2. Problems with text recognition on Captcha  - while recognition Unicode symbols appeared in decryption string eventually, even though it was explicitly forced to use "rus" library - probably because Russian recognition language package is not very enriched due to limited usage of pytesseract with Russian language
 
 _________________________________________________________________________________________________________________________________________________________________
-## Documentation used:
+# Documentation used:
 
 pywin32
 ---------------
